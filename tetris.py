@@ -9,7 +9,7 @@ BOARDWIDTH = 10
 
 class Cube(object):
 
-    def __init__(self):
+    def __init__(self, color):
         pass
 
     def move(self):
@@ -49,7 +49,16 @@ def redrawWindow(surface):
     pygame.display.update()
 
 def generatePiece():
-    pass
+    pieceDict = {
+    "I": (("0","0","1","0","0"),
+          ("0","0","1","0","0"),
+          ("0","0","1","0","0"),
+          ("0","0","1","0","0")),
+    "O": (("0","0","0","0","0"),
+          ("0","1","1","0","0"),
+          ("0","1","1","0","0"),
+          ("0","0","0","0","0"))
+    }
 
 def messageBox():
     pass
